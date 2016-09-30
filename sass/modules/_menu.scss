@@ -1,0 +1,119 @@
+.menu {
+
+  &.active, & > ul ul.active {
+    max-height: 60rem;
+    padding-bottom: 1rem;
+    z-index: 1;
+    color: $white;
+
+    @include breakpoint($screen $navflip) {
+      background-color: rgba($primarycolor, 0.4);
+      border-top: 1px solid $secondarycolor;
+
+      .omedscrolled & {
+        background-color: lighten($primarycolor, 5%);
+      }
+    }
+  }
+
+  &, & > ul ul {
+    background: $primarycolor;
+    @include breakpoint($screen $navflip) {
+      background: none;
+    }
+  }
+
+  &__logo {
+    
+    @include breakpoint($screen $navflip) {
+      & a:hover svg {
+        fill: $secondarycolor;
+      }
+    }
+  }
+} /* End .menu */
+
+.menu-link {
+  display: block;
+  text-align: right;
+  color: $white;
+}
+
+.current-menu-item {
+
+  color: $secondarycolor !important;
+
+  & [class^='icon-'] {
+    fill: $secondarycolor;
+  }
+}
+
+.current-page-ancestor {
+  color: $secondarycolor;
+}
+
+.menu-major {
+
+  & > li {
+
+    @include breakpoint($screen $navflip) {
+      &:hover {
+        background-color: rgba($primarycolor, 0.4);
+        color: $secondarycolor;
+      }
+    }
+
+    .omedscrolled & {
+      &:hover {
+        background-color: lighten($primarycolor, 5%);
+      }
+    }
+
+  }
+}
+
+.menu-minor {
+
+  & li {
+    &:hover [class^='icon-'] {
+      @include breakpoint($screen $navflip) {
+        fill: $secondarycolor;
+      }
+    }
+  }
+
+  & li a {
+    &:hover {
+      color: $secondarycolor;
+    }
+  }
+}
+
+.menu-item-highlight {
+
+  @include breakpoint($screen $navflip) {
+    background: $secondarycolor;  
+    color: $primarycolor;
+
+    & [class^='icon-'] {
+      fill: $primarycolor;
+    }
+
+    &:hover {
+      /*background-color: rgba($teal, .96) !important;*/
+      background-color: rgba($primarycolor, .96);
+    }
+  }
+
+}
+
+.level-2 {
+
+  & .menu-item {
+    @include breakpoint($screen $navflip) {
+      &:hover {
+        color: $secondarycolor;
+      }
+    }
+  }
+}

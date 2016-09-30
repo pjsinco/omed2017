@@ -1,0 +1,51 @@
+%splash-base {
+  position: relative;
+  z-index: -1;
+  height: 325px;
+  width: 100%;
+  font-size: 1em;
+  font-family: $primaryfont;
+  background-size: contain;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-color: rgba($primarycolor, .07);
+  color: $white;
+
+  @include breakpoint($screen $medium-start) {
+    background-size: cover;
+  }
+  
+  @include breakpoint($screen $navflip) {
+    height: 650px;
+  }
+  
+}
+
+.splash {
+
+  &--home, &--transitional-home-page {
+    @extend %splash-base;
+    background: linear-gradient(rgba($secondarycolor,.81), rgba($secondarycolor,.81)), url(images/omed-splash-philly-1.jpg);
+  }
+  
+  &--connection {
+    @extend %splash-base;
+    background: linear-gradient(rgba(0, 188,212,.61), rgba(0, 188,212,.61)), url(images/omed-splash-gentlemen.jpg);
+  }
+
+  &--education {
+    @extend %splash-base;
+    background: linear-gradient(rgba(0, 188,212,.61), rgba(0, 188,212,.61)), url(images/omed-splash-poster.jpg);
+  }
+
+  &--inspiration {
+    @extend %splash-base;
+    background: linear-gradient(rgba(0, 188,212,.61), rgba(0, 188,212,.61)), url(images/omed-splash-drumcorps.jpg);
+  }
+
+  &__header {
+    & > span {
+      color: $yellow;
+    }
+  }
+}
