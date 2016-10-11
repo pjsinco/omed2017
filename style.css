@@ -63,7 +63,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
   color: #fff; }
   @media screen and (min-width: 61.25rem) {
     .menu.active, .menu > ul ul.active {
-      background-color: rgba(223, 40, 38, 0.4);
+      background-color: rgba(223, 40, 38, 0.8);
       border-top: 1px solid #67dfff; }
       .omedscrolled .menu.active, .omedscrolled .menu > ul ul.active {
         background-color: #e23e3c; } }
@@ -92,7 +92,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 @media screen and (min-width: 61.25rem) {
   .menu-major > li:hover {
-    background-color: rgba(223, 40, 38, 0.4);
+    background-color: rgba(223, 40, 38, 0.8);
     color: #67dfff; } }
 .omedscrolled .menu-major > li:hover {
   background-color: #e23e3c; }

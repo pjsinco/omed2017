@@ -7,7 +7,7 @@
     color: $white;
 
     @include breakpoint($screen $navflip) {
-      background-color: rgba($primarycolor, 0.4);
+      background-color: rgba($primarycolor, $navhoveropacity);
       border-top: 1px solid $secondarycolor;
 
       .omedscrolled & {
@@ -58,7 +58,7 @@
 
     @include breakpoint($screen $navflip) {
       &:hover {
-        background-color: rgba($primarycolor, 0.4);
+        background-color: rgba($primarycolor, $navhoveropacity);
         color: $secondarycolor;
       }
     }
