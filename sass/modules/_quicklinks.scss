@@ -1,0 +1,33 @@
+%quicklink-header-base {
+  display: inline-block;
+  margin-bottom: .5rem;
+  padding-bottom: 6px; 
+  line-height: 1.4;
+  font-family: $font-medium;
+  border-bottom: 1px solid $secondarycolor;
+}
+
+.quicklinks {
+
+  &__item {
+    border-top:    1px solid $secondarycolor;
+    border-left:   1px solid $secondarycolor;
+    border-right:  1px solid $secondarycolor;
+    border-bottom: 5px solid $secondarycolor;
+    background: rgba($secondarycolor, .08);
+  }
+
+  &__header {
+
+    &--lightblue {
+      @extend %quicklink-header-base;
+      color: $lightblue;
+    }
+
+    &--red {
+      @extend %quicklink-header-base;
+      color: $red;
+    }
+  }
+}
+

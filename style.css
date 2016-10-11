@@ -33,8 +33,11 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 @media screen and (min-width: 61.25rem) {
   header .branding--omed.icon-omed-logo-alone {
     /*background-color: $secondarycolor;*/
-    background-color: #fff;
-    fill: #df2826; }
+    background-color: transparent;
+    fill: #fff;
+    border: 1px solid #fff; }
+    .omedscrolled header .branding--omed.icon-omed-logo-alone {
+      border: none; }
     header .branding--omed.icon-omed-logo-alone:hover {
       /*fill: $secondarycolor;*/
       fill: #fff;
@@ -147,8 +150,9 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
       height: 650px; } }
 
 .splash--home, .splash--transitional-home-page {
-  background: -webkit-linear-gradient(rgba(223, 40, 38, 0.7), rgba(103, 223, 255, 0.91)), url(images/omed-splash-philly-1.jpg);
-  background: linear-gradient(rgba(223, 40, 38, 0.7), rgba(103, 223, 255, 0.91)), url(images/omed-splash-philly-1.jpg); }
+  /*background: linear-gradient(rgba($primarycolor,.7), rgba($secondarycolor,.91)), url(images/omed-splash-philly-1.jpg);*/
+  background: -webkit-linear-gradient(rgba(103, 223, 255, 0.91), rgba(223, 40, 38, 0.7)), url(images/omed-splash-philly-1.jpg);
+  background: linear-gradient(rgba(103, 223, 255, 0.91), rgba(223, 40, 38, 0.7)), url(images/omed-splash-philly-1.jpg); }
 .splash--connection {
   background: -webkit-linear-gradient(rgba(0, 188, 212, 0.61), rgba(0, 188, 212, 0.61)), url(images/omed-splash-gentlemen.jpg);
   background: linear-gradient(rgba(0, 188, 212, 0.61), rgba(0, 188, 212, 0.61)), url(images/omed-splash-gentlemen.jpg); }
@@ -159,4 +163,30 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
   background: -webkit-linear-gradient(rgba(0, 188, 212, 0.61), rgba(0, 188, 212, 0.61)), url(images/omed-splash-drumcorps.jpg);
   background: linear-gradient(rgba(0, 188, 212, 0.61), rgba(0, 188, 212, 0.61)), url(images/omed-splash-drumcorps.jpg); }
 .splash__header > span {
+  /*color: $primarycolor;*/
+  color: #67dfff; }
+
+.intro__imagecontainer .icon-omed-logo-stack {
+  height: 5rem;
+  width: 16rem; }
+.intro__body:before {
+  border-top: 1px solid #67dfff; }
+
+.quicklinks__header--lightblue, .quicklinks__header--red {
+  display: inline-block;
+  margin-bottom: .5rem;
+  padding-bottom: 6px;
+  line-height: 1.4;
+  font-family: "gotham-medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  border-bottom: 1px solid #67dfff; }
+
+.quicklinks__item {
+  border-top: 1px solid #67dfff;
+  border-left: 1px solid #67dfff;
+  border-right: 1px solid #67dfff;
+  border-bottom: 5px solid #67dfff;
+  background: rgba(103, 223, 255, 0.08); }
+.quicklinks__header--lightblue {
+  color: #67dfff; }
+.quicklinks__header--red {
   color: #df2826; }

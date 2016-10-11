@@ -1,0 +1,17 @@
+.intro {
+
+  &__imagecontainer {
+
+    & .icon-omed-logo-stack {
+      height: 5rem;
+      width: 16rem;
+    }
+  }
+
+  &__body {
+
+    &:before {
+      border-top: 1px solid $secondarycolor;
+    }
+  }
+}

@@ -6,8 +6,13 @@
 
       @include breakpoint($screen $navflip) {
         /*background-color: $secondarycolor;*/
-        background-color: $white;
-        fill: $primarycolor;
+        background-color: transparent;
+        fill: $white;
+        border: 1px solid $white;
+
+        .omedscrolled & {
+          border: none;
+        } 
 
         &:hover {
           /*fill: $secondarycolor;*/
