@@ -10,11 +10,25 @@
 .quicklinks {
 
   &__item {
-    border-top:    1px solid $secondarycolor;
-    border-left:   1px solid $secondarycolor;
-    border-right:  1px solid $secondarycolor;
-    border-bottom: 5px solid $secondarycolor;
-    background: rgba($secondarycolor, .08);
+    /*border-top:    1px solid $secondarycolor;*/
+    /*border-left:   1px solid $secondarycolor;*/
+    /*border-right:  1px solid $secondarycolor;*/
+    /*border-bottom: 5px solid $secondarycolor;*/
+    border-top:    none;
+    border-left:   none;
+    border-right:  none;
+    border-bottom: none;
+    /*background: rgba($secondarycolor, .08);*/
+    background: $white;
+  
+    &:before {
+      /*content: "";*/
+      position: absolute;
+      border-left: 1px solid $secondarycolor;
+      top: 0;
+      bottom: 0;
+      left: 0;
+    }
   }
 
   &__header {

@@ -27,6 +27,11 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 /* Icomoon */
 /* Tables */
 /* Numbers we use */
+/**
+ * Inspired by Bootstrap
+ * https://github.com/twbs/bootstrap-sass/blob/master/assets/stylesheets/bootstrap/mixins/_buttons.scss 
+ *
+ */
 .footer {
   background: #df2826; }
 
@@ -181,12 +186,91 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
   border-bottom: 1px solid #67dfff; }
 
 .quicklinks__item {
-  border-top: 1px solid #67dfff;
-  border-left: 1px solid #67dfff;
-  border-right: 1px solid #67dfff;
-  border-bottom: 5px solid #67dfff;
-  background: rgba(103, 223, 255, 0.08); }
+  /*border-top:    1px solid $secondarycolor;*/
+  /*border-left:   1px solid $secondarycolor;*/
+  /*border-right:  1px solid $secondarycolor;*/
+  /*border-bottom: 5px solid $secondarycolor;*/
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  /*background: rgba($secondarycolor, .08);*/
+  background: #fff; }
+  .quicklinks__item:before {
+    /*content: "";*/
+    position: absolute;
+    border-left: 1px solid #67dfff;
+    top: 0;
+    bottom: 0;
+    left: 0; }
 .quicklinks__header--lightblue {
   color: #67dfff; }
 .quicklinks__header--red {
   color: #df2826; }
+
+.btn {
+  box-shadow: inset 0 0 0 1px #df2826; }
+  .btn--default {
+    color: #666666;
+    background-color: transparent;
+    box-shadow: inset 0 0 0 1px #babbb1; }
+    .btn--default:hover {
+      color: #fff;
+      background-color: #df2826;
+      /*box-shadow: inset 0 0 0 1px $border;*/ }
+  .btn--primary, .btn--teal {
+    color: #df2826;
+    background-color: transparent;
+    box-shadow: inset 0 0 0 1px #df2826; }
+    .btn--primary:hover, .btn--teal:hover {
+      color: #fff;
+      background-color: #df2826;
+      /*box-shadow: inset 0 0 0 1px $border;*/ }
+  .btn--reverse {
+    color: #fff;
+    background-color: transparent;
+    box-shadow: inset 0 0 0 1px #fff; }
+    .btn--reverse:hover {
+      color: #fff;
+      background-color: #df2826;
+      /*box-shadow: inset 0 0 0 1px $border;*/ }
+    .btn--reverse:hover {
+      box-shadow: inset 0 0 0 1px #67dfff;
+      color: #df2826;
+      background-color: #67dfff; }
+  .btn--solid {
+    color: #fff;
+    background-color: #df2826;
+    box-shadow: inset 0 0 0 1px #df2826; }
+    .btn--solid:hover {
+      color: #fff;
+      background-color: #df2826;
+      /*box-shadow: inset 0 0 0 1px $border;*/ }
+    .btn--solid:hover {
+      box-shadow: inset 0 0 0 1px #df2826;
+      color: #df2826;
+      background-color: #fff; }
+
+.highlightable, .highlightable--pinned {
+  border-top: 7px solid #67dfff;
+  margin-top: 4.5rem;
+  padding-top: 0; }
+  @media screen and (min-width: 48rem) {
+    .highlightable, .highlightable--pinned {
+      padding-top: 1rem;
+      margin-top: 8rem;
+      margin-bottom: 6rem;
+      height: 250px; } }
+
+.highlightable {
+  /*background: linear-gradient(45deg, $white 25%, rgba($secondarycolor, .2) 25%, rgba($secondarycolor, .2) 50%, $white 50%, $white 75%, rgba($secondarycolor, .2) 75%);*/
+  /*background-size: 20px 20px;*/
+  border-bottom: 7px solid #67dfff;
+  background: #fff;
+  color: #df2826; }
+  .highlightable--pinned {
+    margin-bottom: 0;
+    background: rgba(103, 223, 255, 0.05);
+    color: #df2826; }
+  .highlightable--pinned .highlightable__kicker {
+    color: rgba(223, 40, 38, 0.7); }

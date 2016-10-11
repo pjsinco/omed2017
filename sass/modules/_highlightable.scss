@@ -1,0 +1,38 @@
+$highlightablebreak: $large-start;
+%highlightable-base {
+  border-top: 7px solid $secondarycolor;
+  margin-top: 4.5rem;
+  padding-top: 0;
+
+  @include breakpoint($screen $highlightablebreak) {
+    padding-top: 1rem;
+    margin-top: 8rem;
+    margin-bottom: 6rem;
+    height: 250px;
+  }
+}
+.highlightable {
+  @extend %highlightable-base;
+
+
+  /*background: linear-gradient(45deg, $white 25%, rgba($secondarycolor, .2) 25%, rgba($secondarycolor, .2) 50%, $white 50%, $white 75%, rgba($secondarycolor, .2) 75%);*/
+  /*background-size: 20px 20px;*/
+  border-bottom: 7px solid $secondarycolor;
+  background: $white;
+  color: $primarycolor;
+
+  &--pinned {
+    @extend %highlightable-base;
+    margin-bottom: 0;
+    background: rgba($secondarycolor, .05);
+    color: $primarycolor;
+  }
+
+  &__kicker {
+
+    .highlightable--pinned & {
+      color: rgba($primarycolor, .7);
+    }
+  }
+}
+
