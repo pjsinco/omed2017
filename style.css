@@ -28,6 +28,14 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
   background: #df2826; }
 
 @media screen and (min-width: 61.25rem) {
+  header .branding--omed.icon-omed-logo-alone {
+    background-color: #67dfff;
+    fill: #df2826; }
+    header .branding--omed.icon-omed-logo-alone:hover {
+      fill: #67dfff;
+      background-color: rgba(223, 40, 38, 0.8); } }
+
+@media screen and (min-width: 61.25rem) {
   .omedscrolled .header, .header--fixed {
     position: fixed;
     top: 0;

@@ -1,0 +1,18 @@
+.branding {
+
+  &--omed {
+
+    header &.icon-omed-logo-alone {
+
+      @include breakpoint($screen $navflip) {
+        background-color: $secondarycolor;
+        fill: $primarycolor;
+
+        &:hover {
+          fill: $secondarycolor;
+          background-color: rgba($primarycolor, $navhoveropacity);
+        }
+      }
+    }
+  }
+}
