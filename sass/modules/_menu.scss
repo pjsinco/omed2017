@@ -1,9 +1,6 @@
 .menu {
 
   &.active, & > ul ul.active {
-    max-height: 60rem;
-    padding-bottom: 1rem;
-    z-index: 1;
     color: $white;
 
     @include breakpoint($screen $navflip) {

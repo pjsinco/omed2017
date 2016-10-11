@@ -8,7 +8,7 @@
   background-size: contain;
   background-position: center top;
   background-repeat: no-repeat;
-  background-color: rgba($primarycolor, .07);
+  background-color: rgba($steelblue, .07);
   color: $white;
 
   @include breakpoint($screen $medium-start) {
@@ -24,7 +24,7 @@
 
   &--home, &--transitional-home-page {
     @extend %splash-base;
-    background: linear-gradient(rgba($primarycolor,.81), rgba($primarycolor,.81)), url(images/omed-splash-philly-1.jpg);
+    background: linear-gradient(rgba($primarycolor,.7), rgba($secondarycolor,.91)), url(images/omed-splash-philly-1.jpg);
   }
   
   &--connection {
@@ -44,7 +44,7 @@
 
   &__header {
     & > span {
-      color: $yellow;
+      color: $primarycolor;
     }
   }
 }

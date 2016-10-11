@@ -5,11 +5,13 @@
     header &.icon-omed-logo-alone {
 
       @include breakpoint($screen $navflip) {
-        background-color: $secondarycolor;
+        /*background-color: $secondarycolor;*/
+        background-color: $white;
         fill: $primarycolor;
 
         &:hover {
-          fill: $secondarycolor;
+          /*fill: $secondarycolor;*/
+          fill: $white;
           background-color: rgba($primarycolor, $navhoveropacity);
         }
       }
