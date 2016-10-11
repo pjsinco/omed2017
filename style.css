@@ -145,8 +145,8 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
       height: 650px; } }
 
 .splash--home, .splash--transitional-home-page {
-  background: -webkit-linear-gradient(rgba(103, 223, 255, 0.81), rgba(103, 223, 255, 0.81)), url(images/omed-splash-philly-1.jpg);
-  background: linear-gradient(rgba(103, 223, 255, 0.81), rgba(103, 223, 255, 0.81)), url(images/omed-splash-philly-1.jpg); }
+  background: -webkit-linear-gradient(rgba(223, 40, 38, 0.81), rgba(223, 40, 38, 0.81)), url(images/omed-splash-philly-1.jpg);
+  background: linear-gradient(rgba(223, 40, 38, 0.81), rgba(223, 40, 38, 0.81)), url(images/omed-splash-philly-1.jpg); }
 .splash--connection {
   background: -webkit-linear-gradient(rgba(0, 188, 212, 0.61), rgba(0, 188, 212, 0.61)), url(images/omed-splash-gentlemen.jpg);
   background: linear-gradient(rgba(0, 188, 212, 0.61), rgba(0, 188, 212, 0.61)), url(images/omed-splash-gentlemen.jpg); }

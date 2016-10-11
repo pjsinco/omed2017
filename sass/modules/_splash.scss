@@ -18,14 +18,13 @@
   @include breakpoint($screen $navflip) {
     height: 650px;
   }
-  
 }
 
 .splash {
 
   &--home, &--transitional-home-page {
     @extend %splash-base;
-    background: linear-gradient(rgba($secondarycolor,.81), rgba($secondarycolor,.81)), url(images/omed-splash-philly-1.jpg);
+    background: linear-gradient(rgba($primarycolor,.81), rgba($primarycolor,.81)), url(images/omed-splash-philly-1.jpg);
   }
   
   &--connection {
