@@ -13,6 +13,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
  * Colors
  */
 /*$yellow: #ece81a;*/
+/*$lightblue: #67dfff;*/
 /*$lightblue: #00e7ff;*/
 /*$lightblue: #99e7ff;*/
 /*$lightblue: #00bef9;*/
@@ -46,7 +47,8 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
     header .branding--omed.icon-omed-logo-alone:hover {
       /*fill: $secondarycolor;*/
       fill: #fff;
-      background-color: rgba(223, 40, 38, 0.8); } }
+      /*background-color: rgba($primarycolor, $navhoveropacity);*/
+      background-color: #df2826; } }
 
 @media screen and (min-width: 61.25rem) {
   .omedscrolled .header, .header--fixed {
@@ -82,7 +84,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
   @media screen and (min-width: 61.25rem) {
     .menu.active, .menu > ul ul.active {
       background-color: rgba(223, 40, 38, 0.8);
-      border-top: 1px solid #67dfff; }
+      border-top: 1px solid #A3D4FF; }
       .omedscrolled .menu.active, .omedscrolled .menu > ul ul.active {
         background-color: #e23e3c; } }
 .menu, .menu > ul ul {
@@ -92,7 +94,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
       background: none; } }
 @media screen and (min-width: 61.25rem) {
   .menu__logo a:hover svg {
-    fill: #67dfff; } }
+    fill: #A3D4FF; } }
 
 /* End .menu */
 .menu-link {
@@ -101,29 +103,29 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
   color: #fff; }
 
 .current-menu-item {
-  color: #67dfff !important; }
+  color: #A3D4FF !important; }
   .current-menu-item [class^='icon-'] {
-    fill: #67dfff; }
+    fill: #A3D4FF; }
 
 .current-page-ancestor {
-  color: #67dfff; }
+  color: #A3D4FF; }
 
 @media screen and (min-width: 61.25rem) {
   .menu-major > li:hover {
     background-color: rgba(223, 40, 38, 0.8);
-    color: #67dfff; } }
+    color: #A3D4FF; } }
 .omedscrolled .menu-major > li:hover {
   background-color: #e23e3c; }
 
 @media screen and (min-width: 61.25rem) {
   .menu-minor li:hover [class^='icon-'] {
-    fill: #67dfff; } }
+    fill: #A3D4FF; } }
 .menu-minor li a:hover {
-  color: #67dfff; }
+  color: #A3D4FF; }
 
 @media screen and (min-width: 61.25rem) {
   .menu-item-highlight {
-    background: #67dfff;
+    background: #A3D4FF;
     color: #df2826; }
     .menu-item-highlight [class^='icon-'] {
       fill: #df2826; }
@@ -133,7 +135,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 @media screen and (min-width: 61.25rem) {
   .level-2 .menu-item:hover {
-    color: #67dfff; } }
+    color: #A3D4FF; } }
 
 .splash--home, .splash--transitional-home-page, .splash--connection, .splash--education, .splash--inspiration {
   position: relative;
@@ -156,8 +158,8 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 .splash--home, .splash--transitional-home-page {
   /*background: linear-gradient(rgba($primarycolor,.7), rgba($secondarycolor,.91)), url(images/omed-splash-philly-1.jpg);*/
-  background: -webkit-linear-gradient(rgba(103, 223, 255, 0.91), rgba(223, 40, 38, 0.7)), url(images/omed-splash-philly-1.jpg);
-  background: linear-gradient(rgba(103, 223, 255, 0.91), rgba(223, 40, 38, 0.7)), url(images/omed-splash-philly-1.jpg); }
+  background: -webkit-linear-gradient(rgba(163, 212, 255, 0.91), rgba(223, 40, 38, 0.7)), url(images/omed-splash-philly-1.jpg);
+  background: linear-gradient(rgba(163, 212, 255, 0.91), rgba(223, 40, 38, 0.7)), url(images/omed-splash-philly-1.jpg); }
 .splash--connection {
   background: -webkit-linear-gradient(rgba(0, 188, 212, 0.61), rgba(0, 188, 212, 0.61)), url(images/omed-splash-gentlemen.jpg);
   background: linear-gradient(rgba(0, 188, 212, 0.61), rgba(0, 188, 212, 0.61)), url(images/omed-splash-gentlemen.jpg); }
@@ -169,13 +171,13 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
   background: linear-gradient(rgba(0, 188, 212, 0.61), rgba(0, 188, 212, 0.61)), url(images/omed-splash-drumcorps.jpg); }
 .splash__header > span {
   /*color: $primarycolor;*/
-  color: #67dfff; }
+  color: #A3D4FF; }
 
 .intro__imagecontainer .icon-omed-logo-stack {
   height: 5rem;
   width: 16rem; }
 .intro__body:before {
-  border-top: 1px solid #67dfff; }
+  border-top: 1px solid #A3D4FF; }
 
 .quicklinks__header--lightblue, .quicklinks__header--red {
   display: inline-block;
@@ -183,7 +185,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
   padding-bottom: 6px;
   line-height: 1.4;
   font-family: "gotham-medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  border-bottom: 1px solid #67dfff; }
+  border-bottom: 1px solid #A3D4FF; }
 
 .quicklinks__item {
   /*border-top:    1px solid $secondarycolor;*/
@@ -199,12 +201,12 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
   .quicklinks__item:before {
     /*content: "";*/
     position: absolute;
-    border-left: 1px solid #67dfff;
+    border-left: 1px solid #A3D4FF;
     top: 0;
     bottom: 0;
     left: 0; }
 .quicklinks__header--lightblue {
-  color: #67dfff; }
+  color: #A3D4FF; }
 .quicklinks__header--red {
   color: #df2826; }
 
@@ -235,9 +237,9 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
       background-color: #df2826;
       /*box-shadow: inset 0 0 0 1px $border;*/ }
     .btn--reverse:hover {
-      box-shadow: inset 0 0 0 1px #67dfff;
-      color: #df2826;
-      background-color: #67dfff; }
+      box-shadow: inset 0 0 0 1px #A3D4FF;
+      color: rgba(223, 40, 38, 0.8);
+      background-color: #A3D4FF; }
   .btn--solid {
     color: #fff;
     background-color: #df2826;
@@ -252,7 +254,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
       background-color: #fff; }
 
 .highlightable, .highlightable--pinned {
-  border-top: 7px solid #67dfff;
+  border-top: 7px solid #A3D4FF;
   margin-top: 4.5rem;
   padding-top: 0; }
   @media screen and (min-width: 48rem) {
@@ -263,14 +265,17 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
       height: 250px; } }
 
 .highlightable {
-  /*background: linear-gradient(45deg, $white 25%, rgba($secondarycolor, .2) 25%, rgba($secondarycolor, .2) 50%, $white 50%, $white 75%, rgba($secondarycolor, .2) 75%);*/
-  /*background-size: 20px 20px;*/
-  border-bottom: 7px solid #67dfff;
-  background: #fff;
-  color: #df2826; }
+  background: -webkit-repeating-linear-gradient(145deg, rgba(223, 40, 38, 0.9), rgba(223, 40, 38, 0.9) 3px, #df2826 3px, #df2826 4px);
+  background: repeating-linear-gradient(-55deg, rgba(223, 40, 38, 0.9), rgba(223, 40, 38, 0.9) 3px, #df2826 3px, #df2826 4px);
+  border-bottom: 7px solid #A3D4FF;
+  color: #fff; }
   .highlightable--pinned {
     margin-bottom: 0;
-    background: rgba(103, 223, 255, 0.05);
+    /*background: rgba($secondarycolor, .05);*/
+    background: aliceblue;
     color: #df2826; }
   .highlightable--pinned .highlightable__kicker {
     color: rgba(223, 40, 38, 0.7); }
+  .highlightable__header {
+    font-family: "gotham-book", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /*font-weight: 600 !important;*/ }

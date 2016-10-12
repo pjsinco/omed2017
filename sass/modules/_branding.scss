@@ -17,7 +17,8 @@
         &:hover {
           /*fill: $secondarycolor;*/
           fill: $white;
-          background-color: rgba($primarycolor, $navhoveropacity);
+          /*background-color: rgba($primarycolor, $navhoveropacity);*/
+          background-color: $primarycolor;
         }
       }
     }
