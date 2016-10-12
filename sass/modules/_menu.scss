@@ -4,8 +4,8 @@
     color: $white;
 
     @include breakpoint($screen $navflip) {
-      background-color: rgba($primarycolor, $navhoveropacity);
-      border-top: 1px solid $secondarycolor;
+      background-color: rgba($secondarycolor, .28);
+      border: 1px solid $white;
 
       .omedscrolled & {
         background-color: lighten($primarycolor, 5%);
@@ -55,8 +55,10 @@
 
     @include breakpoint($screen $navflip) {
       &:hover {
-        background-color: rgba($primarycolor, $navhoveropacity);
-        color: $secondarycolor;
+        /*background-color: rgba($primarycolor, $navhoveropacity);*/
+        background-color: rgba($secondarycolor, .28);
+        color: $white;
+        box-shadow: inset 2px -1px 0 -1px $white, inset -2px 2px 0 -1px $white;
       }
     }
 
@@ -109,7 +111,8 @@
   & .menu-item {
     @include breakpoint($screen $navflip) {
       &:hover {
-        color: $secondarycolor;
+        /*color: $secondarycolor;*/
+        color: lighten($primarycolor, 5%);
       }
     }
   }

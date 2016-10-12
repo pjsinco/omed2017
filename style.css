@@ -83,8 +83,8 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
   color: #fff; }
   @media screen and (min-width: 61.25rem) {
     .menu.active, .menu > ul ul.active {
-      background-color: rgba(223, 40, 38, 0.8);
-      border-top: 1px solid #A3D4FF; }
+      background-color: rgba(163, 212, 255, 0.28);
+      border: 1px solid #fff; }
       .omedscrolled .menu.active, .omedscrolled .menu > ul ul.active {
         background-color: #e23e3c; } }
 .menu, .menu > ul ul {
@@ -112,8 +112,10 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 @media screen and (min-width: 61.25rem) {
   .menu-major > li:hover {
-    background-color: rgba(223, 40, 38, 0.8);
-    color: #A3D4FF; } }
+    /*background-color: rgba($primarycolor, $navhoveropacity);*/
+    background-color: rgba(163, 212, 255, 0.28);
+    color: #fff;
+    box-shadow: inset 2px -1px 0 -1px #fff, inset -2px 2px 0 -1px #fff; } }
 .omedscrolled .menu-major > li:hover {
   background-color: #e23e3c; }
 
@@ -135,7 +137,8 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 @media screen and (min-width: 61.25rem) {
   .level-2 .menu-item:hover {
-    color: #A3D4FF; } }
+    /*color: $secondarycolor;*/
+    color: #e23e3c; } }
 
 .splash--home, .splash--transitional-home-page, .splash--connection, .splash--education, .splash--inspiration {
   position: relative;
