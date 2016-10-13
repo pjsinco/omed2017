@@ -25,12 +25,14 @@
   &--home, &--transitional-home-page {
     @extend %splash-base;
     /*background: linear-gradient(rgba($primarycolor,.7), rgba($secondarycolor,.91)), url(images/omed-splash-philly-1.jpg);*/
-    background: linear-gradient(rgba($secondarycolor,.91), rgba($primarycolor,.7)), url(images/omed-splash-philly-1.jpg);
+    /*background: linear-gradient(rgba($secondarycolor,.91), rgba($primarycolor,.7)), url(images/omed-splash-philly-1.jpg);*/
+    background: linear-gradient(rgba($secondarycolor,.91), rgba($yellow,.5)), url(images/omed-splash-philly-1.jpg);
+    /*background: linear-gradient(rgba($steelblue,.61), rgba($primarycolor,.7)), url(images/omed-splash-philly-1.jpg);*/
   }
   
   &--connection {
     @extend %splash-base;
-    background: linear-gradient(rgba(0, 188,212,.61), rgba(0, 188,212,.61)), url(images/omed-splash-gentlemen.jpg);
+    background: linear-gradient(rgba($secondarycolor,.91), rgba($yellow,.5)), url(images/omed-splash-brookshield.jpg);
   }
 
   &--education {

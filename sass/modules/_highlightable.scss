@@ -22,7 +22,8 @@ $highlightablebreak: $large-start;
     @extend %highlightable-base;
     margin-bottom: 0;
     /*background: rgba($secondarycolor, .05);*/
-    background: aliceblue;
+    /*background: aliceblue;*/
+    background: repeating-linear-gradient(-55deg, rgba($secondarycolor, .4), rgba($secondarycolor, .4) 3px, rgba($secondarycolor, .2) 3px, rgba($secondarycolor, .2) 4px);
     color: $primarycolor;
   }
 
@@ -34,7 +35,7 @@ $highlightablebreak: $large-start;
   }
 
   &__header {
-    font-family: $font-book;
+    font-family: $font-medium;
     /*font-weight: 600 !important;*/
   }
 }

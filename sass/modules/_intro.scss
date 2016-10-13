@@ -15,3 +15,32 @@
     }
   }
 }
+
+.dropclothcontainer {
+  min-height: 76rem;
+
+  @include breakpoint($screen $medium-start) {
+    min-height: 50rem;
+  }
+
+  @include breakpoint($screen 592px) {
+    min-height: 46rem;
+  }
+
+  /*@include breakpoint($screen $introinflection) {*/
+    /*border-top: 8px solid $yellow;*/
+  /*}*/
+
+  @include breakpoint($screen $large-minor-start) {
+    min-height: 51rem;
+  }
+}
+
+.dropcloth {
+  background: rgba($yellow, .15);
+  position: absolute;
+  top: 0;
+  bottom: -8rem;
+  left: 0;
+  right: 0;
+}

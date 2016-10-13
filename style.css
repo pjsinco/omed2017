@@ -17,6 +17,8 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 /*$lightblue: #00e7ff;*/
 /*$lightblue: #99e7ff;*/
 /*$lightblue: #00bef9;*/
+/*$lightblue: #00b9eb;*/
+/*$steelblue: #6898b9;*/
 /*$verydark: #4d4d4d;*/
 /* Typography */
 /* Spacing */
@@ -33,6 +35,9 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
  * https://github.com/twbs/bootstrap-sass/blob/master/assets/stylesheets/bootstrap/mixins/_buttons.scss 
  *
  */
+body {
+  background: #f6f9fa; }
+
 .footer {
   background: #df2826; }
 
@@ -55,7 +60,9 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
     position: fixed;
     top: 0;
     z-index: 100;
-    background-color: rgba(223, 40, 38, 0.96); } }
+    /*background-color: rgba($primarycolor, .96);*/
+    /*background: $secondarycolor;*/
+    background: #fff; } }
 
 .header {
   height: 3.75rem;
@@ -83,7 +90,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
   color: #fff; }
   @media screen and (min-width: 61.25rem) {
     .menu.active, .menu > ul ul.active {
-      background-color: rgba(163, 212, 255, 0.28);
+      background-color: rgba(127, 195, 255, 0.28);
       border: 1px solid #fff; }
       .omedscrolled .menu.active, .omedscrolled .menu > ul ul.active {
         background-color: #e23e3c; } }
@@ -92,9 +99,11 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
   @media screen and (min-width: 61.25rem) {
     .menu, .menu > ul ul {
       background: none; } }
+.menu__items {
+  color: #df2826; }
 @media screen and (min-width: 61.25rem) {
   .menu__logo a:hover svg {
-    fill: #A3D4FF; } }
+    fill: #7fc3ff; } }
 
 /* End .menu */
 .menu-link {
@@ -103,31 +112,33 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
   color: #fff; }
 
 .current-menu-item {
-  color: #A3D4FF !important; }
+  color: #7fc3ff !important; }
   .current-menu-item [class^='icon-'] {
-    fill: #A3D4FF; }
+    fill: #7fc3ff; }
 
 .current-page-ancestor {
-  color: #A3D4FF; }
+  color: #7fc3ff; }
 
 @media screen and (min-width: 61.25rem) {
   .menu-major > li:hover {
     /*background-color: rgba($primarycolor, $navhoveropacity);*/
-    background-color: rgba(163, 212, 255, 0.28);
-    color: #fff;
+    background-color: rgba(127, 195, 255, 0.28);
+    color: #fcef06;
     box-shadow: inset 2px -1px 0 -1px #fff, inset -2px 2px 0 -1px #fff; } }
-.omedscrolled .menu-major > li:hover {
-  background-color: #e23e3c; }
+.omedscrolled .menu-major > li {
+  color: #7fc3ff; }
+  .omedscrolled .menu-major > li:hover {
+    background-color: #fcf11f; }
 
 @media screen and (min-width: 61.25rem) {
   .menu-minor li:hover [class^='icon-'] {
-    fill: #A3D4FF; } }
+    fill: #7fc3ff; } }
 .menu-minor li a:hover {
-  color: #A3D4FF; }
+  color: #7fc3ff; }
 
 @media screen and (min-width: 61.25rem) {
   .menu-item-highlight {
-    background: #A3D4FF;
+    background: #7fc3ff;
     color: #df2826; }
     .menu-item-highlight [class^='icon-'] {
       fill: #df2826; }
@@ -150,7 +161,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
   background-size: contain;
   background-position: center top;
   background-repeat: no-repeat;
-  background-color: rgba(104, 152, 185, 0.07);
+  background-color: rgba(104, 153, 184, 0.07);
   color: #fff; }
   @media screen and (min-width: 30rem) {
     .splash--home, .splash--transitional-home-page, .splash--connection, .splash--education, .splash--inspiration {
@@ -161,11 +172,13 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 .splash--home, .splash--transitional-home-page {
   /*background: linear-gradient(rgba($primarycolor,.7), rgba($secondarycolor,.91)), url(images/omed-splash-philly-1.jpg);*/
-  background: -webkit-linear-gradient(rgba(163, 212, 255, 0.91), rgba(223, 40, 38, 0.7)), url(images/omed-splash-philly-1.jpg);
-  background: linear-gradient(rgba(163, 212, 255, 0.91), rgba(223, 40, 38, 0.7)), url(images/omed-splash-philly-1.jpg); }
+  /*background: linear-gradient(rgba($secondarycolor,.91), rgba($primarycolor,.7)), url(images/omed-splash-philly-1.jpg);*/
+  background: -webkit-linear-gradient(rgba(127, 195, 255, 0.91), rgba(252, 239, 6, 0.5)), url(images/omed-splash-philly-1.jpg);
+  background: linear-gradient(rgba(127, 195, 255, 0.91), rgba(252, 239, 6, 0.5)), url(images/omed-splash-philly-1.jpg);
+  /*background: linear-gradient(rgba($steelblue,.61), rgba($primarycolor,.7)), url(images/omed-splash-philly-1.jpg);*/ }
 .splash--connection {
-  background: -webkit-linear-gradient(rgba(0, 188, 212, 0.61), rgba(0, 188, 212, 0.61)), url(images/omed-splash-gentlemen.jpg);
-  background: linear-gradient(rgba(0, 188, 212, 0.61), rgba(0, 188, 212, 0.61)), url(images/omed-splash-gentlemen.jpg); }
+  background: -webkit-linear-gradient(rgba(127, 195, 255, 0.91), rgba(252, 239, 6, 0.5)), url(images/omed-splash-brookshield.jpg);
+  background: linear-gradient(rgba(127, 195, 255, 0.91), rgba(252, 239, 6, 0.5)), url(images/omed-splash-brookshield.jpg); }
 .splash--education {
   background: -webkit-linear-gradient(rgba(0, 188, 212, 0.61), rgba(0, 188, 212, 0.61)), url(images/omed-splash-poster.jpg);
   background: linear-gradient(rgba(0, 188, 212, 0.61), rgba(0, 188, 212, 0.61)), url(images/omed-splash-poster.jpg); }
@@ -174,13 +187,36 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
   background: linear-gradient(rgba(0, 188, 212, 0.61), rgba(0, 188, 212, 0.61)), url(images/omed-splash-drumcorps.jpg); }
 .splash__header > span {
   /*color: $primarycolor;*/
-  color: #A3D4FF; }
+  color: #7fc3ff; }
 
 .intro__imagecontainer .icon-omed-logo-stack {
   height: 5rem;
   width: 16rem; }
 .intro__body:before {
-  border-top: 1px solid #A3D4FF; }
+  border-top: 1px solid #7fc3ff; }
+
+.dropclothcontainer {
+  min-height: 76rem;
+  /*@include breakpoint($screen $introinflection) {*/
+  /*border-top: 8px solid $yellow;*/
+  /*}*/ }
+  @media screen and (min-width: 30rem) {
+    .dropclothcontainer {
+      min-height: 50rem; } }
+  @media screen and (min-width: 592px) {
+    .dropclothcontainer {
+      min-height: 46rem; } }
+  @media screen and (min-width: 56rem) {
+    .dropclothcontainer {
+      min-height: 51rem; } }
+
+.dropcloth {
+  background: rgba(252, 239, 6, 0.15);
+  position: absolute;
+  top: 0;
+  bottom: -8rem;
+  left: 0;
+  right: 0; }
 
 .quicklinks__header--lightblue, .quicklinks__header--red {
   display: inline-block;
@@ -188,28 +224,25 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
   padding-bottom: 6px;
   line-height: 1.4;
   font-family: "gotham-medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  border-bottom: 1px solid #A3D4FF; }
+  border-bottom: 1px solid #7fc3ff; }
 
 .quicklinks__item {
-  /*border-top:    1px solid $secondarycolor;*/
-  /*border-left:   1px solid $secondarycolor;*/
-  /*border-right:  1px solid $secondarycolor;*/
-  /*border-bottom: 5px solid $secondarycolor;*/
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  border-bottom: none;
+  border: 1px solid #e9f0f3;
+  /*border-top:    none;*/
+  /*border-left:   none;*/
+  /*border-right:  none;*/
+  /*border-bottom: none;*/
   /*background: rgba($secondarycolor, .08);*/
   background: #fff; }
   .quicklinks__item:before {
     /*content: "";*/
     position: absolute;
-    border-left: 1px solid #A3D4FF;
+    border-left: 1px solid #7fc3ff;
     top: 0;
     bottom: 0;
     left: 0; }
 .quicklinks__header--lightblue {
-  color: #A3D4FF; }
+  color: #7fc3ff; }
 .quicklinks__header--red {
   color: #df2826; }
 
@@ -240,9 +273,9 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
       background-color: #df2826;
       /*box-shadow: inset 0 0 0 1px $border;*/ }
     .btn--reverse:hover {
-      box-shadow: inset 0 0 0 1px #A3D4FF;
+      box-shadow: inset 0 0 0 1px #7fc3ff;
       color: rgba(223, 40, 38, 0.8);
-      background-color: #A3D4FF; }
+      background-color: #7fc3ff; }
   .btn--solid {
     color: #fff;
     background-color: #df2826;
@@ -257,7 +290,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
       background-color: #fff; }
 
 .highlightable, .highlightable--pinned {
-  border-top: 7px solid #A3D4FF;
+  border-top: 7px solid #7fc3ff;
   margin-top: 4.5rem;
   padding-top: 0; }
   @media screen and (min-width: 48rem) {
@@ -270,15 +303,17 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 .highlightable {
   background: -webkit-repeating-linear-gradient(145deg, rgba(223, 40, 38, 0.9), rgba(223, 40, 38, 0.9) 3px, #df2826 3px, #df2826 4px);
   background: repeating-linear-gradient(-55deg, rgba(223, 40, 38, 0.9), rgba(223, 40, 38, 0.9) 3px, #df2826 3px, #df2826 4px);
-  border-bottom: 7px solid #A3D4FF;
+  border-bottom: 7px solid #7fc3ff;
   color: #fff; }
   .highlightable--pinned {
     margin-bottom: 0;
     /*background: rgba($secondarycolor, .05);*/
-    background: aliceblue;
+    /*background: aliceblue;*/
+    background: -webkit-repeating-linear-gradient(145deg, rgba(127, 195, 255, 0.4), rgba(127, 195, 255, 0.4) 3px, rgba(127, 195, 255, 0.2) 3px, rgba(127, 195, 255, 0.2) 4px);
+    background: repeating-linear-gradient(-55deg, rgba(127, 195, 255, 0.4), rgba(127, 195, 255, 0.4) 3px, rgba(127, 195, 255, 0.2) 3px, rgba(127, 195, 255, 0.2) 4px);
     color: #df2826; }
   .highlightable--pinned .highlightable__kicker {
     color: rgba(223, 40, 38, 0.7); }
   .highlightable__header {
-    font-family: "gotham-book", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "gotham-medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
     /*font-weight: 600 !important;*/ }
