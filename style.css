@@ -46,9 +46,9 @@ body {
 @media screen and (min-width: 61.25rem) {
   header .branding--omed.icon-omed-logo-alone {
     /*background-color: $secondarycolor;*/
-    background-color: transparent;
+    background-color: #fa4132;
     fill: #fff;
-    border: 1px solid #fff; }
+    /*border: 1px solid $white;*/ }
     .omedscrolled header .branding--omed.icon-omed-logo-alone {
       border: none; }
     header .branding--omed.icon-omed-logo-alone:hover {
@@ -89,10 +89,10 @@ body {
         opacity: 1; } }
 
 .menu.active, .menu > ul ul.active {
-  color: #fff; }
+  color: rgba(255, 255, 255, 0.8); }
   @media screen and (min-width: 61.25rem) {
     .menu.active, .menu > ul ul.active {
-      background-color: rgba(127, 195, 255, 0.28);
+      background-color: rgba(250, 65, 50, 0.85);
       border: 1px solid #fff; }
       .omedscrolled .menu.active, .omedscrolled .menu > ul ul.active {
         background-color: #fb584b; } }
@@ -124,8 +124,8 @@ body {
 @media screen and (min-width: 61.25rem) {
   .menu-major > li:hover {
     /*background-color: rgba($primarycolor, $navhoveropacity);*/
-    background-color: rgba(127, 195, 255, 0.28);
-    color: #fcef06;
+    background-color: rgba(250, 65, 50, 0.85);
+    color: #fff;
     box-shadow: inset 2px -1px 0 -1px #fff, inset -2px 2px 0 -1px #fff; } }
 .omedscrolled .menu-major > li {
   color: #7fc3ff; }
@@ -151,7 +151,8 @@ body {
 @media screen and (min-width: 61.25rem) {
   .level-2 .menu-item:hover {
     /*color: $secondarycolor;*/
-    color: #fb584b; } }
+    /*color: lighten($primarycolor, 5%);*/
+    color: white; } }
 
 .splash--home, .splash--transitional-home-page, .splash--connection, .splash--education, .splash--inspiration {
   position: relative;
@@ -174,16 +175,21 @@ body {
 
 .splash--home, .splash--transitional-home-page {
   /*background: linear-gradient(rgba($primarycolor,.7), rgba($secondarycolor,.91)), url(images/omed-splash-philly-1.jpg);*/
-  background: -webkit-linear-gradient(rgba(127, 195, 255, 0.91), rgba(250, 65, 50, 0.7)), url(images/omed-splash-philly-1.jpg);
-  background: linear-gradient(rgba(127, 195, 255, 0.91), rgba(250, 65, 50, 0.7)), url(images/omed-splash-philly-1.jpg);
   /*background: linear-gradient(rgba($secondarycolor,.91), rgba($yellow,.5)), url(images/omed-splash-philly-1.jpg);*/
+  /*background: linear-gradient(rgba($secondarycolor,.91), rgba($primarycolor,.7)), url(images/omed-splash-philly-1.jpg);*/
+  background: -webkit-linear-gradient(rgba(250, 65, 50, 0.71), rgba(127, 195, 255, 0.9)), url(images/omed-splash-philly-1.jpg);
+  background: linear-gradient(rgba(250, 65, 50, 0.71), rgba(127, 195, 255, 0.9)), url(images/omed-splash-philly-1.jpg);
+  /*background: linear-gradient(rgba($primarycolor, .7), rgba($primarycolor,.7)), url(images/omed-splash-philly-1.jpg);*/
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top; }
 .splash--connection {
   /*background: linear-gradient(rgba($secondarycolor,.91), rgba($yellow,.5)), url(images/omed-splash-brookshield.jpg);*/
-  background: -webkit-linear-gradient(rgba(127, 195, 255, 0.91), rgba(250, 65, 50, 0.7)), url(images/omed-splash-brookshield.jpg);
-  background: linear-gradient(rgba(127, 195, 255, 0.91), rgba(250, 65, 50, 0.7)), url(images/omed-splash-brookshield.jpg);
+  /*background: linear-gradient(rgba($secondarycolor,.91), rgba($primarycolor,.7)), url(images/omed-splash-brookshield.jpg);*/
+  background: -webkit-linear-gradient(rgba(127, 195, 255, 0.6), rgba(127, 195, 255, 0.6)), url(images/omed-splash-brookshield.jpg);
+  background: linear-gradient(rgba(127, 195, 255, 0.6), rgba(127, 195, 255, 0.6)), url(images/omed-splash-brookshield.jpg);
+  /*background: linear-gradient(rgba($primarycolor,.6), rgba($primarycolor,.6)), url(images/omed-splash-brookshield.jpg);*/
+  /*background: linear-gradient(rgba($primarycolor,.5), rgba($secondarycolor,.9)), url(images/omed-splash-brookshield.jpg);*/
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top; }
@@ -193,9 +199,12 @@ body {
 .splash--inspiration {
   background: -webkit-linear-gradient(rgba(0, 188, 212, 0.61), rgba(0, 188, 212, 0.61)), url(images/omed-splash-drumcorps.jpg);
   background: linear-gradient(rgba(0, 188, 212, 0.61), rgba(0, 188, 212, 0.61)), url(images/omed-splash-drumcorps.jpg); }
-.splash__header > span {
-  /*color: $primarycolor;*/
-  color: #7fc3ff; }
+.splash__header {
+  font-family: "gotham-medium", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  .splash__header > span {
+    /*color: $primarycolor;*/
+    /*color: $secondarycolor;*/
+    color: #fff; }
 
 .intro__imagecontainer .icon-omed-logo-stack {
   height: 5rem;

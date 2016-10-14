@@ -1,10 +1,10 @@
 .menu {
 
   &.active, & > ul ul.active {
-    color: $white;
+    color: rgba($white, .8);
 
     @include breakpoint($screen $navflip) {
-      background-color: rgba($secondarycolor, .28);
+      background-color: rgba($primarycolor, .85);
       border: 1px solid $white;
 
       .omedscrolled & {
@@ -60,8 +60,8 @@
     @include breakpoint($screen $navflip) {
       &:hover {
         /*background-color: rgba($primarycolor, $navhoveropacity);*/
-        background-color: rgba($secondarycolor, .28);
-        color: $yellow;
+        background-color: rgba($primarycolor, .85);
+        color: $white;
         box-shadow: inset 2px -1px 0 -1px $white, inset -2px 2px 0 -1px $white;
       }
     }
@@ -116,7 +116,8 @@
     @include breakpoint($screen $navflip) {
       &:hover {
         /*color: $secondarycolor;*/
-        color: lighten($primarycolor, 5%);
+        /*color: lighten($primarycolor, 5%);*/
+        color: rgba($white, 1);
       }
     }
   }

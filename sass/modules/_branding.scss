@@ -6,9 +6,9 @@
 
       @include breakpoint($screen $navflip) {
         /*background-color: $secondarycolor;*/
-        background-color: transparent;
+        background-color: $primarycolor;
         fill: $white;
-        border: 1px solid $white;
+        /*border: 1px solid $white;*/
 
         .omedscrolled & {
           border: none;
