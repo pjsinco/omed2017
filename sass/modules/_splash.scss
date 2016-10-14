@@ -1,3 +1,9 @@
+@mixin splash-position {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
 %splash-base {
   position: relative;
   z-index: -1;
@@ -5,10 +11,10 @@
   width: 100%;
   font-size: 1em;
   font-family: $primaryfont;
-  background-size: contain;
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-color: rgba($steelblue, .07);
+  /*background-size: contain;*/
+  /*background-position: center top;*/
+  /*background-repeat: no-repeat;*/
+  /*background-color: rgba($lightblue, .07);*/
   color: $white;
 
   @include breakpoint($screen $medium-start) {
@@ -25,14 +31,19 @@
   &--home, &--transitional-home-page {
     @extend %splash-base;
     /*background: linear-gradient(rgba($primarycolor,.7), rgba($secondarycolor,.91)), url(images/omed-splash-philly-1.jpg);*/
-    /*background: linear-gradient(rgba($secondarycolor,.91), rgba($primarycolor,.7)), url(images/omed-splash-philly-1.jpg);*/
-    background: linear-gradient(rgba($secondarycolor,.91), rgba($yellow,.5)), url(images/omed-splash-philly-1.jpg);
-    /*background: linear-gradient(rgba($steelblue,.61), rgba($primarycolor,.7)), url(images/omed-splash-philly-1.jpg);*/
+    background: linear-gradient(rgba($secondarycolor,.91), rgba($primarycolor,.7)), url(images/omed-splash-philly-1.jpg);
+    /*background: linear-gradient(rgba($secondarycolor,.91), rgba($yellow,.5)), url(images/omed-splash-philly-1.jpg);*/
+    @include splash-position;
   }
   
   &--connection {
     @extend %splash-base;
-    background: linear-gradient(rgba($secondarycolor,.91), rgba($yellow,.5)), url(images/omed-splash-brookshield.jpg);
+    // yellow-blue
+    /*background: linear-gradient(rgba($secondarycolor,.91), rgba($yellow,.5)), url(images/omed-splash-brookshield.jpg);*/
+
+    // red-blue
+    background: linear-gradient(rgba($secondarycolor,.91), rgba($primarycolor,.7)), url(images/omed-splash-brookshield.jpg);
+    @include splash-position;
   }
 
   &--education {
