@@ -6,3 +6,12 @@
 
 * StackEx: [Why does my child theme CSS get called twice? - WordPress Development Stack Exchange](http://wordpress.stackexchange.com/questions/167639/why-does-my-child-theme-css-get-called-twice)
 
+##Image galleries
+*Agency blog tutorial*  
+[Google Photos Material Gallery](http://ettrics.com/code/material-photo-gallery/)
+
+*Github*  
+[desandro/imagesloaded: JavaScript is all like "You images done yet or what?"](https://github.com/desandro/imagesloaded)
+    
+*Github*  
+[ptgamr/google-image-layout: A library help you to build Google like Image Gallery](https://github.com/ptgamr/google-image-layout)
