@@ -15,10 +15,15 @@
         } 
 
         &:hover {
-          /*fill: $secondarycolor;*/
-          fill: $white;
+          fill: $secondarycolor;
+          /*fill: $white;*/
           /*background-color: rgba($primarycolor, $navhoveropacity);*/
           background-color: $primarycolor;
+        }
+
+        & svg {
+          /*width: 136px;*/
+          /*height: 28px;*/
         }
       }
     }
