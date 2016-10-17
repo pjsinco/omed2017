@@ -1,4 +1,4 @@
-##Git
+##Git branching workflow
 * Blog: [A successful Git branching model » nvie.com](http://nvie.com/posts/a-successful-git-branching-model/)
 
 ##Child theming
@@ -15,3 +15,9 @@
     
 *Github*  
 [ptgamr/google-image-layout: A library help you to build Google like Image Gallery](https://github.com/ptgamr/google-image-layout)
+
+##SVG
+[SVG Style Inheritance and the ‘Flash Of Unstyled SVG’](https://sarasoueidan.com/blog/svg-style-inheritance-and-FOUSVG/)
+
+##Inspr
+[Circles Conference 2016 by Circles Co.](http://circlesconference.com/)
