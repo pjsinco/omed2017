@@ -16,6 +16,12 @@
 *Github*  
 [ptgamr/google-image-layout: A library help you to build Google like Image Gallery](https://github.com/ptgamr/google-image-layout)
 
+*Smashing*
+* [Magnific Popup, A Truly Responsive Lightbox (For jQuery And Zepto.js) – Smashing Magazine](https://www.smashingmagazine.com/2013/05/truly-responsive-lightbox/)
+
+*Magnific Popup*
+* [dimsemenov/Magnific-Popup: Light and responsive lightbox script with focus on performance.](https://github.com/dimsemenov/Magnific-Popup)
+
 ##SVG
 [SVG Style Inheritance and the ‘Flash Of Unstyled SVG’](https://sarasoueidan.com/blog/svg-style-inheritance-and-FOUSVG/)
 
