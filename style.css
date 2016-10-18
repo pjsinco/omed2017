@@ -152,7 +152,7 @@ svg {
   .omedscrolled .header, .header--fixed {
     position: fixed;
     top: 0;
-    z-index: 100;
+    z-index: 10;
     /*background-color: rgba($primarycolor, .96);*/
     background: rgba(127, 195, 255, 0.96);
     /*background: $primarycolor;*/ } }
