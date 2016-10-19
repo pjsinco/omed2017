@@ -22,8 +22,13 @@
 *Magnific Popup*
 * [dimsemenov/Magnific-Popup: Light and responsive lightbox script with focus on performance.](https://github.com/dimsemenov/Magnific-Popup)
 
+
+*PhotoSwipe*
+* [The Perfect Lightbox? Using PhotoSwipe with jQuery](https://webdesign.tutsplus.com/tutorials/the-perfect-lightbox-using-photoswipe-with-jquery--cms-23587)
+
 ##SVG
 [SVG Style Inheritance and the ‘Flash Of Unstyled SVG’](https://sarasoueidan.com/blog/svg-style-inheritance-and-FOUSVG/)
 
 ##Inspr
 [Circles Conference 2016 by Circles Co.](http://circlesconference.com/)
+[CSS Dev Conf 2016](http://2016.cssdevconf.com/)
