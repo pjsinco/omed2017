@@ -7,24 +7,27 @@
 * StackEx: [Why does my child theme CSS get called twice? - WordPress Development Stack Exchange](http://wordpress.stackexchange.com/questions/167639/why-does-my-child-theme-css-get-called-twice)
 
 ##Image galleries
-*Agency blog tutorial*  
+#####Agency blog tutorial
 [Google Photos Material Gallery](http://ettrics.com/code/material-photo-gallery/)
 
-*Github*  
+#####Github
 [desandro/imagesloaded: JavaScript is all like "You images done yet or what?"](https://github.com/desandro/imagesloaded)
     
-*Github*  
+#####Github
 [ptgamr/google-image-layout: A library help you to build Google like Image Gallery](https://github.com/ptgamr/google-image-layout)
 
-*Smashing*
+#####Smashing
 * [Magnific Popup, A Truly Responsive Lightbox (For jQuery And Zepto.js) – Smashing Magazine](https://www.smashingmagazine.com/2013/05/truly-responsive-lightbox/)
 
-*Magnific Popup*
+#####Magnific Popup
 * [dimsemenov/Magnific-Popup: Light and responsive lightbox script with focus on performance.](https://github.com/dimsemenov/Magnific-Popup)
 
 
-*PhotoSwipe*
+#####PhotoSwipe
 * [The Perfect Lightbox? Using PhotoSwipe with jQuery](https://webdesign.tutsplus.com/tutorials/the-perfect-lightbox-using-photoswipe-with-jquery--cms-23587)
+
+* *Examples*
+    * [Mother Nature](https://demo.flamepix.com/galleries/nature/)
 
 ##SVG
 [SVG Style Inheritance and the ‘Flash Of Unstyled SVG’](https://sarasoueidan.com/blog/svg-style-inheritance-and-FOUSVG/)
