@@ -14,6 +14,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
  */
 /*$yellow: #ece81a;*/
 /*$red: #df2826;*/
+/*$lightblue: #A3D4FF;*/
 /*$lightblue: #438DCE;*/
 /*$lightblue: #67dfff;*/
 /*$lightblue: #00e7ff;*/
@@ -38,7 +39,29 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
  *
  */
 body {
-  background: #f6f9fa; }
+  /*background: $palegray;*/ }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #fa4132; }
+
+h1 {
+  border-bottom: 3px solid #7fc3ff; }
+  @media screen and (min-width: 61.25rem) {
+    h1 {
+      border-bottom: none; } }
+
+article h3 {
+  border-bottom: 1px solid #7fc3ff;
+  opacity: 1;
+  font-family: "gotham-book", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+a {
+  color: #fa4132; }
+
+input, textarea {
+  border-color: #fa4132; }
+  input:focus, textarea:focus {
+    box-shadow: 0 0 2px 2px rgba(250, 65, 50, 0.2); }
 
 .footer {
   background: #fa4132; }
@@ -273,27 +296,35 @@ svg {
   /*background: linear-gradient(rgba($secondarycolor,.91), rgba($primarycolor,.7)), url(images/omed-splash-philly-1.jpg);*/
   /*background: linear-gradient(rgba($primarycolor, .7), rgba($primarycolor,.7)), url(images/omed-splash-philly-1.jpg);*/
   /*background: linear-gradient(rgba($primarycolor, .71), rgba($secondarycolor,.9)), url(images/omed-splash-philly-1.jpg);*/
-  background: -webkit-linear-gradient(rgba(127, 195, 255, 0.8), rgba(127, 195, 255, 0.8)), url(images/omed-splash-philly-1.jpg);
-  background: linear-gradient(rgba(127, 195, 255, 0.8), rgba(127, 195, 255, 0.8)), url(images/omed-splash-philly-1.jpg);
+  background: -webkit-linear-gradient(rgba(250, 65, 50, 0.6), rgba(127, 195, 255, 0.9)), url(images/omed-splash-philly-1.jpg);
+  background: linear-gradient(rgba(250, 65, 50, 0.6), rgba(127, 195, 255, 0.9)), url(images/omed-splash-philly-1.jpg);
+  /*background: linear-gradient(rgba($secondarycolor,.8), rgba($secondarycolor,.8)), url(images/omed-splash-philly-1.jpg);*/
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top; }
 .splash--connection {
   /*background: linear-gradient(rgba($secondarycolor,.91), rgba($yellow,.5)), url(images/omed-splash-brookshield.jpg);*/
-  /*background: linear-gradient(rgba($secondarycolor,.91), rgba($primarycolor,.7)), url(images/omed-splash-brookshield.jpg);*/
-  background: -webkit-linear-gradient(rgba(127, 195, 255, 0.7), rgba(127, 195, 255, 0.7)), url(images/omed-splash-brookshield.jpg);
-  background: linear-gradient(rgba(127, 195, 255, 0.7), rgba(127, 195, 255, 0.7)), url(images/omed-splash-brookshield.jpg);
+  /*background: linear-gradient(rgba($secondarycolor,.81), rgba($primarycolor,.7)), url(images/omed-splash-brookshield.jpg);*/
   /*background: linear-gradient(rgba($primarycolor,.6), rgba($primarycolor,.6)), url(images/omed-splash-brookshield.jpg);*/
   /*background: linear-gradient(rgba($primarycolor,.5), rgba($secondarycolor,.9)), url(images/omed-splash-brookshield.jpg);*/
+  background: -webkit-linear-gradient(transparent, #7fc3ff), url(images/omed-splash-brookshield.jpg);
+  background: linear-gradient(transparent, #7fc3ff), url(images/omed-splash-brookshield.jpg);
+  /*background: linear-gradient(rgba($secondarycolor,.7), rgba($secondarycolor,.7)), url(images/omed-splash-brookshield.jpg);*/
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left top; }
+.splash--education {
+  background: -webkit-linear-gradient(rgba(0, 188, 212, 0.61), rgba(0, 188, 212, 0.61)), url(images/omed-splash-poster.jpg);
+  background: linear-gradient(rgba(0, 188, 212, 0.61), rgba(0, 188, 212, 0.61)), url(images/omed-splash-poster.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top; }
-.splash--education {
-  background: -webkit-linear-gradient(rgba(0, 188, 212, 0.61), rgba(0, 188, 212, 0.61)), url(images/omed-splash-poster.jpg);
-  background: linear-gradient(rgba(0, 188, 212, 0.61), rgba(0, 188, 212, 0.61)), url(images/omed-splash-poster.jpg); }
 .splash--inspiration {
   background: -webkit-linear-gradient(rgba(0, 188, 212, 0.61), rgba(0, 188, 212, 0.61)), url(images/omed-splash-drumcorps.jpg);
-  background: linear-gradient(rgba(0, 188, 212, 0.61), rgba(0, 188, 212, 0.61)), url(images/omed-splash-drumcorps.jpg); }
+  background: linear-gradient(rgba(0, 188, 212, 0.61), rgba(0, 188, 212, 0.61)), url(images/omed-splash-drumcorps.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top; }
 .splash__header {
   font-family: "gotham-medium", "Helvetica Neue", Helvetica, Arial, sans-serif; }
   .splash__header > span {
@@ -448,3 +479,33 @@ svg {
   color: #fa4132; }
   .section__header:after {
     border-bottom: 3px solid #7fc3ff; }
+
+@media screen and (min-width: 61.25rem) {
+  .pagenav__item:not(:last-child):after {
+    border-bottom: 1px solid #7fc3ff; } }
+
+@media screen and (min-width: 61.25rem) {
+  .content__main:before {
+    border-right: 1px solid #7fc3ff; } }
+
+.breakout {
+  border: 1px solid #7fc3ff;
+  background: rgba(127, 195, 255, 0.05); }
+  .breakout h3 {
+    color: #fa4132; }
+
+.contact__success {
+  padding: 1rem;
+  margin-top: 2rem;
+  color: #fa4132;
+  background: rgba(127, 195, 255, 0.14); }
+
+.splinkle {
+  color: #fa4132; }
+  .splinkle__item:before {
+    color: #7fc3ff; }
+  .splinkle__header {
+    border-bottom: 1px solid #7fc3ff; }
+
+.leadin {
+  color: #808080; }

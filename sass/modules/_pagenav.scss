@@ -1,0 +1,13 @@
+.pagenav {
+
+  @include breakpoint($screen $navflip) {
+
+    &__item {
+
+      &:not(:last-child):after {
+        border-bottom: 1px solid $secondarycolor;
+
+      }
+    }
+  }
+}

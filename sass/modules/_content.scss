@@ -1,0 +1,12 @@
+.content {
+
+
+  &__main {
+
+    @include breakpoint($screen $navflip) {
+      &:before {
+        border-right: 1px solid $secondarycolor;
+      }
+    }
+  }
+}

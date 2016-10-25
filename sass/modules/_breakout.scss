@@ -1,0 +1,9 @@
+.breakout {
+
+  border: 1px solid $secondarycolor;
+  background: rgba($secondarycolor, 0.05);
+
+  & h3 {
+    color: $primarycolor;
+  }
+}
