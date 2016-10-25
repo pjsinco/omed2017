@@ -1,0 +1,14 @@
+.section {
+
+  &__header {
+
+    font-family: $font-medium;
+    color: $primarycolor;
+
+    &:after {
+      border-bottom: 3px solid $secondarycolor;
+    }
+  }
+
+}
+

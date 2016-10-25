@@ -1,6 +1,5 @@
 $highlightablebreak: $large-start;
 %highlightable-base {
-  border-top: 7px solid $secondarycolor;
   margin-top: 4.5rem;
   padding-top: 0;
 
@@ -8,35 +7,57 @@ $highlightablebreak: $large-start;
     padding-top: 1rem;
     margin-top: 8rem;
     margin-bottom: 6rem;
-    height: 250px;
   }
 }
+%highlightable-pinned {
+
+}
+
 .highlightable {
   @extend %highlightable-base;
+  border-top: 7px solid $secondarycolor;
 
-  background: repeating-linear-gradient(-55deg, rgba($primarycolor, .9), rgba($primarycolor, .9) 3px, $primarycolor 3px, $primarycolor 4px);
+  background: repeating-linear-gradient(-45deg, rgba($primarycolor, .9), rgba($primarycolor, .9) 3px, $primarycolor 3px, $primarycolor 4px);
   border-bottom: 7px solid $secondarycolor;
   color: $white;
+
+  @include breakpoint($screen $highlightablebreak) {
+    height: 250px;
+  }
 
   &--pinned {
     @extend %highlightable-base;
     margin-bottom: 0;
     /*background: rgba($secondarycolor, .05);*/
     /*background: aliceblue;*/
-    background: repeating-linear-gradient(-55deg, rgba($secondarycolor, .4), rgba($secondarycolor, .4) 3px, rgba($secondarycolor, .2) 3px, rgba($secondarycolor, .2) 4px);
-    color: $primarycolor;
+    /*background: repeating-linear-gradient(-45deg, rgba($secondarycolor, .4), rgba($secondarycolor, .4) 3px, rgba($secondarycolor, .2) 3px, rgba($secondarycolor, .2) 4px);*/
+    background: $secondarycolor;
+    color: $white;
+    border-top: none;
+    border-bottom: 1px solid $white;
+
+    @include breakpoint($screen $highlightablebreak) {
+      height: 237px;
+    }
   }
 
   &__kicker {
 
     .highlightable--pinned & {
-      color: rgba($primarycolor, .7);
+      /*color: rgba($primarycolor, .7);*/
+      color: $white;
     }
   }
 
   &__header {
     font-family: $font-medium;
     /*font-weight: 600 !important;*/
+    color: $white;
+  
+    .highlightable--pinned & {
+      text-shadow: 2px 2px 1px #1e95ff;
+      letter-spacing: 1px;
+    }
   }
 }
 
