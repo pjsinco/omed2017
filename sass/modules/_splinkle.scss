@@ -1,0 +1,15 @@
+.splinkle {
+
+  color: $primarycolor;
+
+  &__item {
+
+    &:before {
+      color: $secondarycolor;
+    }
+  }
+
+  &__header {
+    border-bottom: 1px solid $secondarycolor;
+  }
+}
