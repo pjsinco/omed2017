@@ -33,8 +33,7 @@
   &--home, &--transitional-home-page {
     @extend %splash-base;
     /*background: linear-gradient(rgba($primarycolor,.7), rgba($secondarycolor,.91)), url(images/omed-splash-philly-1.jpg);*/
-    /*background: linear-gradient(rgba($secondarycolor,.91), rgba($yellow,.5)), url(images/omed-splash-philly-1.jpg);*/
-    /*background: linear-gradient(rgba($secondarycolor,.91), rgba($primarycolor,.7)), url(images/omed-splash-philly-1.jpg);*/
+    /*background: linear-gradient(rgba($secondarycolor,.91), rgba($yellow,.5)), url(images/omed-splash-philly-1.jpg);*/ /*background: linear-gradient(rgba($secondarycolor,.91), rgba($primarycolor,.7)), url(images/omed-splash-philly-1.jpg);*/
     /*background: linear-gradient(rgba($primarycolor, .7), rgba($primarycolor,.7)), url(images/omed-splash-philly-1.jpg);*/
     /*background: linear-gradient(rgba($primarycolor, .71), rgba($secondarycolor,.9)), url(images/omed-splash-philly-1.jpg);*/
     background: linear-gradient(rgba($primarycolor,.6), rgba($secondarycolor,.9)), url(images/omed-splash-philly-1.jpg);
@@ -52,8 +51,10 @@
     // red-blue
     /*background: linear-gradient(rgba($secondarycolor,.81), rgba($primarycolor,.7)), url(images/omed-splash-brookshield.jpg);*/
     /*background: linear-gradient(rgba($primarycolor,.6), rgba($primarycolor,.6)), url(images/omed-splash-brookshield.jpg);*/
-    /*background: linear-gradient(rgba($primarycolor,.5), rgba($secondarycolor,.9)), url(images/omed-splash-brookshield.jpg);*/
-    background: linear-gradient(transparent, rgba($secondarycolor,1)), url(images/omed-splash-brookshield.jpg);
+    background: linear-gradient(rgba($primarycolor,.5), rgba($secondarycolor,.9)), url(images/omed-splash-brookshield.jpg);
+    /*background: linear-gradient(rgba($white, .5), rgba($white,.9)), url(images/omed-splash-brookshield.jpg);*/
+
+    /*background: linear-gradient(transparent, rgba($secondarycolor,1)), url(images/omed-splash-brookshield.jpg);*/
 
     /*background: linear-gradient(rgba($secondarycolor,.7), rgba($secondarycolor,.7)), url(images/omed-splash-brookshield.jpg);*/
     @include splash-position(left top);
@@ -61,13 +62,15 @@
 
   &--education {
     @extend %splash-base;
-    background: linear-gradient(rgba(0, 188,212,.61), rgba(0, 188,212,.61)), url(images/omed-splash-poster.jpg);
+    /*background: linear-gradient(transparent, rgba($secondarycolor,1)), url(images/omed-splash-brookshield.jpg);*/
+    background: linear-gradient(transparent, rgba($secondarycolor,1));
     @include splash-position(center top);
   }
 
   &--inspiration {
     @extend %splash-base;
-    background: linear-gradient(rgba(0, 188,212,.61), rgba(0, 188,212,.61)), url(images/omed-splash-drumcorps.jpg);
+    /*background: linear-gradient(rgba(0, 188,212,.61), rgba(0, 188,212,.61)), url(images/omed-splash-drumcorps.jpg);*/
+    background: linear-gradient(transparent, rgba($secondarycolor,1));
     @include splash-position(center top);
   }
 

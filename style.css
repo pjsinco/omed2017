@@ -306,22 +306,25 @@ svg {
   /*background: linear-gradient(rgba($secondarycolor,.91), rgba($yellow,.5)), url(images/omed-splash-brookshield.jpg);*/
   /*background: linear-gradient(rgba($secondarycolor,.81), rgba($primarycolor,.7)), url(images/omed-splash-brookshield.jpg);*/
   /*background: linear-gradient(rgba($primarycolor,.6), rgba($primarycolor,.6)), url(images/omed-splash-brookshield.jpg);*/
-  /*background: linear-gradient(rgba($primarycolor,.5), rgba($secondarycolor,.9)), url(images/omed-splash-brookshield.jpg);*/
-  background: -webkit-linear-gradient(transparent, #7fc3ff), url(images/omed-splash-brookshield.jpg);
-  background: linear-gradient(transparent, #7fc3ff), url(images/omed-splash-brookshield.jpg);
+  background: -webkit-linear-gradient(rgba(250, 65, 50, 0.5), rgba(127, 195, 255, 0.9)), url(images/omed-splash-brookshield.jpg);
+  background: linear-gradient(rgba(250, 65, 50, 0.5), rgba(127, 195, 255, 0.9)), url(images/omed-splash-brookshield.jpg);
+  /*background: linear-gradient(rgba($white, .5), rgba($white,.9)), url(images/omed-splash-brookshield.jpg);*/
+  /*background: linear-gradient(transparent, rgba($secondarycolor,1)), url(images/omed-splash-brookshield.jpg);*/
   /*background: linear-gradient(rgba($secondarycolor,.7), rgba($secondarycolor,.7)), url(images/omed-splash-brookshield.jpg);*/
   background-size: cover;
   background-repeat: no-repeat;
   background-position: left top; }
 .splash--education {
-  background: -webkit-linear-gradient(rgba(0, 188, 212, 0.61), rgba(0, 188, 212, 0.61)), url(images/omed-splash-poster.jpg);
-  background: linear-gradient(rgba(0, 188, 212, 0.61), rgba(0, 188, 212, 0.61)), url(images/omed-splash-poster.jpg);
+  /*background: linear-gradient(transparent, rgba($secondarycolor,1)), url(images/omed-splash-brookshield.jpg);*/
+  background: -webkit-linear-gradient(transparent, #7fc3ff);
+  background: linear-gradient(transparent, #7fc3ff);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top; }
 .splash--inspiration {
-  background: -webkit-linear-gradient(rgba(0, 188, 212, 0.61), rgba(0, 188, 212, 0.61)), url(images/omed-splash-drumcorps.jpg);
-  background: linear-gradient(rgba(0, 188, 212, 0.61), rgba(0, 188, 212, 0.61)), url(images/omed-splash-drumcorps.jpg);
+  /*background: linear-gradient(rgba(0, 188,212,.61), rgba(0, 188,212,.61)), url(images/omed-splash-drumcorps.jpg);*/
+  background: -webkit-linear-gradient(transparent, #7fc3ff);
+  background: linear-gradient(transparent, #7fc3ff);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top; }
