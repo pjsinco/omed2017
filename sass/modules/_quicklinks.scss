@@ -11,10 +11,10 @@
 
   &__item {
     border: 1px solid $lesspalegray;
-    /*border-top:    none;*/
+    border-top:    3px solid $secondarycolor;
     /*border-left:   none;*/
     /*border-right:  none;*/
-    /*border-bottom: none;*/
+    border-bottom: 3px solid $secondarycolor;
     /*background: rgba($secondarycolor, .08);*/
     background: $white;
   

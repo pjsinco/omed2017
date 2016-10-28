@@ -5,10 +5,11 @@
 
     @include breakpoint($screen $navflip) {
       background-color: rgba($primarycolor, .85);
-      border: 1px solid $white;
+      border-top: 1px solid rgba($white, 0.25);
 
       .omedscrolled & {
-        background-color: rgba($primarycolor, .85);
+        background-color: rgba($primarycolor, .96);
+        border-top: none;
       }
     }
   }
@@ -17,6 +18,22 @@
     background: $primarycolor;
     @include breakpoint($screen $navflip) {
       background: none;
+    }
+  }
+
+  & > ul ul {
+    @include breakpoint($screen $navflip) {
+      top: 59px;
+      
+    }
+  }
+
+  & ul {
+
+    @include breakpoint($screen $navflip) {
+      display: flex;
+      flex-basis: auto;
+      border: 0;
     }
   }
 
@@ -61,17 +78,26 @@
       &:hover {
         /*background-color: rgba($primarycolor, $navhoveropacity);*/
         /*background-color: rgba($primarycolor, .85);*/
-        background-color: $primarycolor;
+        //background-color: $primarycolor;
+        background-color: rgba($primarycolor, .85);
         color: $white;
-        box-shadow: inset 2px -1px 0 -1px $white, inset -2px 2px 0 -1px $white;
+        /*box-shadow: inset 2px -2px 0 -1px $white, inset -2px 2px 0 -1px $white;*/
       }
     }
 
     .omedscrolled & {
-      color: $white;
+      color: rgba($white,.6);
+      width: auto;
+
+      @include breakpoint($screen $navflip) {
+        /*width: 10rem;*/
+        text-align: center;
+      }
 
       &:hover {
-        background-color: $primarycolor;
+        /*background-color: $primarycolor;*/
+        background-color: inherit;
+        box-shadow: none;
         color: $white;
       }
 
@@ -81,6 +107,13 @@
 }
 
 .menu-minor {
+
+  &.level-1 {
+    @include breakpoint($screen $navflip) {
+      justify-content: flex-end;
+      flex-basis: auto;
+    }
+  }
 
   & li {
     &:hover [class^='icon-'] {
@@ -119,12 +152,47 @@
 
   & .menu-item {
     @include breakpoint($screen $navflip) {
-      &:hover {
-        /*color: $secondarycolor;*/
-        /*color: lighten($primarycolor, 5%);*/
-        color: rgba($white, 1);
-        background-color: $primarycolor;
+
+      .omedscrolled & {
+        border-top: 1px solid rgba($white, .25);
+        border-bottom: none;
       }
+
+      &:hover {
+        color: $white;
+        /*color: lighten($primarycolor, 5%);*/
+        /*color: rgba($white, 1);*/
+
+        /*background-color: $primarycolor;*/
+      }
+    }
+  }
+
+  .menu & > li a {
+    @include breakpoint($screen $navflip) {
+      padding: 1rem 1rem 1rem 2rem;
+      height: 100%;
+      line-height: 2.1;
+    }
+  } 
+
+  & > li > a:after {
+    @include breakpoint($screen $navflip) {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 12px;
+      background: transparent;
+      left: 0;
+      top: 0;
+      transition: background-color .15s linear;
+      bottom: 0; 
+    }
+  }
+
+  & > li:hover > a:after {
+    @include breakpoint($screen $navflip) {
+      background: $secondarycolor;
     }
   }
 }
