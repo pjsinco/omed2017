@@ -35,3 +35,9 @@
 ##Inspr
 [Circles Conference 2016 by Circles Co.](http://circlesconference.com/)
 [CSS Dev Conf 2016](http://2016.cssdevconf.com/)
+
+
+##Tricks
+* [Create a slide-out footer with this neat z-index trick | Tutorialzine](http://tutorialzine.com/2013/08/slideout-footer-css/)
+* [Staggering Animations | CSS-Tricks](https://css-tricks.com/staggering-animations/)
+* [Slide In (as you scroll down) Boxes | CSS-Tricks](https://css-tricks.com/slide-in-as-you-scroll-down-boxes/)
