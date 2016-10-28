@@ -297,7 +297,8 @@ svg {
 @media screen and (min-width: 61.25rem) {
   .omedscrolled .level-2 .menu-item {
     border-top: 1px solid rgba(255, 255, 255, 0.25);
-    border-bottom: none; }
+    border-bottom: none;
+    text-align: left; }
   .level-2 .menu-item:hover {
     color: #fff;
     /*color: lighten($primarycolor, 5%);*/
@@ -428,10 +429,9 @@ svg {
 .quicklinks__item {
   border: 1px solid #e9f0f3;
   border-top: 3px solid #7fc3ff;
-  /*border-left:   none;*/
-  /*border-right:  none;*/
+  border-left: 1px solid #7fc3ff;
+  border-right: 1px solid #7fc3ff;
   border-bottom: 3px solid #7fc3ff;
-  /*background: rgba($secondarycolor, .08);*/
   background: #fff; }
   .quicklinks__item:before {
     /*content: "";*/
