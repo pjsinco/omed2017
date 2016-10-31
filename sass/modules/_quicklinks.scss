@@ -11,11 +11,13 @@
 
   &__item {
     border: 1px solid $lesspalegray;
-    /*border-top:    none;*/
-    /*border-left:   none;*/
-    /*border-right:  none;*/
-    /*border-bottom: none;*/
-    /*background: rgba($secondarycolor, .08);*/
+    border-top:   3px solid $secondarycolor;
+    border-left:  1px solid $secondarycolor;
+    border-right:  1px solid $secondarycolor;
+//    border-left:   none;
+//    border-right:  none;
+    border-bottom: 3px solid $secondarycolor;
+//    background: rgba($secondarycolor, .08);
     background: $white;
   
     &:before {
