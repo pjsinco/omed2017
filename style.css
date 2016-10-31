@@ -74,12 +74,9 @@ svg {
 @media screen and (min-width: 61.25rem) {
   .aoa-logo {
     /*opacity: .8;*/
-    -webkit-transition-property: opacity;
-            transition-property: opacity;
-    -webkit-transition-duration: 0.3s;
-            transition-duration: 0.3s;
-    -webkit-transition-timing-function: ease-in;
-            transition-timing-function: ease-in; }
+    transition-property: opacity;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in; }
     .aoa-logo:hover {
       opacity: 1;
       cursor: pointer; }
@@ -101,12 +98,9 @@ svg {
       display: block;
       /*animation-name: fadein;*/
       /*animation-duration: 1s;*/
-      -webkit-transition-property: opacity;
-              transition-property: opacity;
-      -webkit-transition-duration: 0.3s;
-              transition-duration: 0.3s;
-      -webkit-transition-timing-function: ease-in;
-              transition-timing-function: ease-in;
+      transition-property: opacity;
+      transition-duration: 0.3s;
+      transition-timing-function: ease-in;
       opacity: .7;
       fill: #fff; } }
   .sticky .omed-logo {
@@ -136,12 +130,6 @@ svg {
   /*}*/ }
   .sticky .omed-rule {
     display: none; }
-
-@-webkit-keyframes fadein {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
 
 @keyframes fadein {
   from {
@@ -189,16 +177,11 @@ svg {
       padding-left: 1rem;
       padding-right: 1rem;
       opacity: 1;
-      -webkit-animation-name: fadein;
-              animation-name: fadein;
-      -webkit-animation-duration: 1s;
-              animation-duration: 1s;
-      -webkit-transition-property: fill;
-              transition-property: fill;
-      -webkit-transition-duration: .3s;
-              transition-duration: .3s;
-      -webkit-transition-timing-function: ease-in;
-              transition-timing-function: ease-in; }
+      animation-name: fadein;
+      animation-duration: 1s;
+      transition-property: fill;
+      transition-duration: .3s;
+      transition-timing-function: ease-in; }
       .omedscrolled .header {
         opacity: 1; } }
 
@@ -221,13 +204,8 @@ svg {
     top: 59px; } }
 @media screen and (min-width: 61.25rem) {
   .menu ul {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-flex-basis: auto;
-        -ms-flex-preferred-size: auto;
-            flex-basis: auto;
+    flex-basis: auto;
     border: 0; } }
 .menu__items {
   color: #fff; }
@@ -271,13 +249,8 @@ svg {
 
 @media screen and (min-width: 61.25rem) {
   .menu-minor.level-1 {
-    -webkit-box-pack: end;
-    -webkit-justify-content: flex-end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    -webkit-flex-basis: auto;
-        -ms-flex-preferred-size: auto;
-            flex-basis: auto; } }
+    justify-content: flex-end;
+    flex-basis: auto; } }
 @media screen and (min-width: 61.25rem) {
   .menu-minor li:hover [class^='icon-'] {
     fill: #fff; } }
@@ -318,8 +291,7 @@ svg {
     background: transparent;
     left: 0;
     top: 0;
-    -webkit-transition: background-color .15s linear;
-            transition: background-color .15s linear;
+    transition: background-color .15s linear;
     bottom: 0; } }
 @media screen and (min-width: 61.25rem) {
   .level-2 > li:hover > a:after {
@@ -350,7 +322,6 @@ svg {
   /*background: linear-gradient(rgba($secondarycolor,.91), rgba($primarycolor,.7)), url(images/omed-splash-philly-1.jpg);*/
   /*background: linear-gradient(rgba($primarycolor, .7), rgba($primarycolor,.7)), url(images/omed-splash-philly-1.jpg);*/
   /*background: linear-gradient(rgba($primarycolor, .71), rgba($secondarycolor,.9)), url(images/omed-splash-philly-1.jpg);*/
-  background: -webkit-linear-gradient(rgba(250, 65, 50, 0.6), rgba(127, 195, 255, 0.9)), url(images/omed-splash-philly-1.jpg);
   background: linear-gradient(rgba(250, 65, 50, 0.6), rgba(127, 195, 255, 0.9)), url(images/omed-splash-philly-1.jpg);
   /*background: linear-gradient(rgba($secondarycolor,.8), rgba($secondarycolor,.8)), url(images/omed-splash-philly-1.jpg);*/
   background-size: cover;
@@ -360,7 +331,6 @@ svg {
   /*background: linear-gradient(rgba($secondarycolor,.91), rgba($yellow,.5)), url(images/omed-splash-brookshield.jpg);*/
   /*background: linear-gradient(rgba($secondarycolor,.81), rgba($primarycolor,.7)), url(images/omed-splash-brookshield.jpg);*/
   /*background: linear-gradient(rgba($primarycolor,.6), rgba($primarycolor,.6)), url(images/omed-splash-brookshield.jpg);*/
-  background: -webkit-linear-gradient(rgba(250, 65, 50, 0.5), rgba(127, 195, 255, 0.9)), url(images/omed-splash-brookshield.jpg);
   background: linear-gradient(rgba(250, 65, 50, 0.5), rgba(127, 195, 255, 0.9)), url(images/omed-splash-brookshield.jpg);
   /*background: linear-gradient(rgba($white, .5), rgba($white,.9)), url(images/omed-splash-brookshield.jpg);*/
   /*background: linear-gradient(transparent, rgba($secondarycolor,1)), url(images/omed-splash-brookshield.jpg);*/
@@ -370,14 +340,12 @@ svg {
   background-position: left top; }
 .splash--education {
   /*background: linear-gradient(transparent, rgba($secondarycolor,1)), url(images/omed-splash-brookshield.jpg);*/
-  background: -webkit-linear-gradient(transparent, #7fc3ff);
   background: linear-gradient(transparent, #7fc3ff);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top; }
 .splash--inspiration {
   /*background: linear-gradient(rgba(0, 188,212,.61), rgba(0, 188,212,.61)), url(images/omed-splash-drumcorps.jpg);*/
-  background: -webkit-linear-gradient(transparent, #7fc3ff);
   background: linear-gradient(transparent, #7fc3ff);
   background-size: cover;
   background-repeat: no-repeat;
@@ -500,7 +468,6 @@ svg {
 
 .highlightable {
   border-top: 7px solid #7fc3ff;
-  background: -webkit-repeating-linear-gradient(135deg, rgba(250, 65, 50, 0.9), rgba(250, 65, 50, 0.9) 3px, #fa4132 3px, #fa4132 4px);
   background: repeating-linear-gradient(-45deg, rgba(250, 65, 50, 0.9), rgba(250, 65, 50, 0.9) 3px, #fa4132 3px, #fa4132 4px);
   border-bottom: 7px solid #7fc3ff;
   color: #fff; }
