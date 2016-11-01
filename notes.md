@@ -33,9 +33,9 @@
 [SVG Style Inheritance and the ‘Flash Of Unstyled SVG’](https://sarasoueidan.com/blog/svg-style-inheritance-and-FOUSVG/)
 
 ##Inspr
-[Circles Conference 2016 by Circles Co.](http://circlesconference.com/)
-[CSS Dev Conf 2016](http://2016.cssdevconf.com/)
-
+* [Circles Conference 2016 by Circles Co.](http://circlesconference.com/)
+* [CSS Dev Conf 2016](http://2016.cssdevconf.com/)
+* [LiquidApt: Overview](http://www.hive585.com/liquidapt/overview.php)
 
 ##Tricks
 * [Create a slide-out footer with this neat z-index trick | Tutorialzine](http://tutorialzine.com/2013/08/slideout-footer-css/)
