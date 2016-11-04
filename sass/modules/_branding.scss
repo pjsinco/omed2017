@@ -29,3 +29,13 @@
     }
   }
 }
+
+.omedLogoAlone {
+  transition: fill .2s linear;
+
+  header .branding--omed.icon-omed-logo-alone:hover & {
+    fill: $secondarycolor;
+    background-color: $primarycolor;
+
+  }
+}

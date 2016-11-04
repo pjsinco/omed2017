@@ -48,6 +48,10 @@
         fill: $secondarycolor;
       }
     }
+
+    &--banner {
+      background: rgba($primarycolor,.8);
+    }
   }
 } /* End .menu */
 
